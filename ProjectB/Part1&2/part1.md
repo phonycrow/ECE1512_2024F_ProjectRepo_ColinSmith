@@ -1,7 +1,5 @@
 # Generate Dataset
 
-`python ImageNet-1k/sort_imagenet.py ImageNet-1k/ train`
-
 `python ImageNet-1k/sort_imagenet.py ImageNet-1k/ val`
 
 # Run Vim

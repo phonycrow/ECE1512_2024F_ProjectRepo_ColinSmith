@@ -3,7 +3,7 @@
 **/__pycache__
 **.pth
 **/.cache
-ProjectB/Part1&2/ImageNet-1k
+ProjectB/Part1&2/ImageNet-1k/val
 ProjectB/Part3&4/ckpt_baseline
 ProjectB/Part3&4/transformed_mnist_train.dataset
 
