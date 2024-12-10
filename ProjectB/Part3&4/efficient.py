@@ -109,14 +109,6 @@ class VisionMlp(nn.Module):
         self.fc2 = nn.Linear(hidden_dim, dim).half()
 
     def forward(self, x) -> torch.Tensor:
-        # print(self.fc1.weight.size())
-        # print(self.mask.size())
-        # self.fc1.weight = nn.Parameter(torch.sparse.to_sparse_semi_structured(self.fc1.weight.masked_fill(~self.mask, 0)))
-        # # prune least-impactful channels
-        # to_prune = x.size()[0]//2
-        # most_impactful = np.argpartition(np.sum(np.abs(x), 0), to_prune)[to_prune:]
-        # print(most_impactful)
-        # print(x)
         return self.fc2(self.act(self.fc1(x.half()))).float()
 
 
